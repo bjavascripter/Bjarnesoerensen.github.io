@@ -1,0 +1,489 @@
+/**
+ * Contents
+ *
+ *   1. Imports
+ *   2. Global Styles
+ *   3. Starter Template
+ */
+
+/* 1. Imports
+-------------------------------------------*/
+
+@import "bootstrap-variables";
+@import "bootstrap";
+
+
+/* 2. Global Styles
+-------------------------------------------*/
+
+$fa-font-path: "../fonts/";
+@import "../../../node_modules/font-awesome/scss/font-awesome.scss";
+
+
+/* 3. Starter Template
+-------------------------------------------*/
+
+body {
+//background-image: url(/images/background.jpeg);
+//have done the backgroundpicture in the indexfile directly. Because it only should be active on one page.
+background-size: cover;
+max-width: 100%;
+height: auto;
+background-attachment: fixed;
+padding-top: 7px;
+
+}
+
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+
+/* Navbar hover effect */
+
+.nav-item {
+
+
+a:hover, a:focus, a:active {
+    color: #999;
+    text-decoration: none;
+}
+
+a {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    text-decoration: none;
+    transition: color 0.1s, background-color 0.1s;
+    position: relative;
+    display: block;
+    padding: 16px 0;
+    margin: 0 12px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+    color: #0080ff;
+}
+a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #0080ff;
+    transform-origin: center top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+a:active::before {
+    background-color: #000;
+}
+a:hover::before, a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+    }
+}
+
+
+
+.container-fluid {
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+}
+
+
+.progress {
+	margin: 10px;
+}
+
+
+.carousel-example-generic {
+    height: 300px;
+    width: auto;
+}
+
+.jumbotron {
+
+    background-color: transparent !important;
+    padding-top: 300px;
+}
+
+.jumbotron h1 {
+    font-weight: bold;
+    color: #0080ff !important;
+    text-shadow: 4px 1px 1px rgba(0, 0, 0, 0.73);
+}
+
+
+.jumbotron h2 {
+    color: #0080ff;
+    font-weight: bold;
+    text-shadow: 4px 1px 1px rgba(0, 0, 0, 0.73);
+}
+#hero {
+    background: #777777 url(../images/brand.jpeg) no-repeat top left;
+    background-size: cover;
+    position: relative;
+    height: 472px;
+    width: 100%;
+}
+
+    #hero-text {
+        bottom: 15%;
+        background-color:#0080ff;
+        color: white;
+        left: 5%;
+        position: absolute;
+        text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.73);
+        max-width: 60%;
+    }
+
+        #hero-text h1 {
+            font-size: 40px;
+            margin: 0 0 10px 0;
+            padding: 0;
+        }
+
+        #hero-text p {
+            font-size: 20px;
+            line-height: 1.5;
+            text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.73);
+        }
+
+.boxthing {
+
+    background-color: red;
+    height: 30px;
+    width: 30px;
+
+}
+
+
+/* Picture at main page
+-------------------------------------------*/
+.main-picture {
+    min-width: auto;
+    height: 200px;
+
+}
+
+.logo-picture {
+    position: center;
+
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    border: #000000;
+    border-radius: 50%;
+
+}
+
+.jeff {
+
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    margin-left: 400px;
+    margin-top: 60px;
+    border-radius: 50%;
+}
+
+#bob {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background-color: grey;
+    margin: 300px;
+}
+
+.row-marketing {
+
+    background-color: black;
+    margin: 40px;
+}
+
+.footer {
+    border-radius: 2%;
+    background-color: #d3d3d3;
+    margin-top: 30px;
+    margin: 30px;
+}
+
+
+
+
+.section {
+
+	margin: 20px;
+}
+
+.text-center {
+
+	margin-top: 5rem;
+}
+
+
+
+.form-horizontal .form-group {
+
+    max-width: 50%;;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.fa {
+    padding-right: 20px;
+}
+
+.box {
+
+    background-color: red;
+    width: 0.1rem;
+    min-height: 100%;
+    border: 0.2rem solid blue;
+    padding: 0px;
+    margin: 25px;
+
+
+}
+
+
+.responsive {
+	max-width: 100%;
+	display:block;
+	height: auto;
+	border-radius: 25px;
+}
+
+.col-md-3 {
+position: relative;
+min-height: 1px;
+padding-right: 15px;
+padding-left: 15px;
+}
+
+.row {
+
+	margin-top: 10px;
+}
+
+
+.navbar-fixed-top {
+
+position: fixed;
+right: 0;
+left: 0;
+}
+
+
+
+
+.row-marketing {
+
+    background-color: black;
+    margin: 40px;
+}
+
+.logo {
+    height: 400px;
+    width: 160px;
+    display: block;
+    text-align: center;
+
+
+}
+
+.jeffy {
+    margin-top: 400px;
+
+}
+
+.page-header {
+
+    position: relative;
+    display: center;
+    left: 30%;
+
+}
+
+#password {
+  border: 1px solid #c0c0c0;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+
+.logo-1 {
+  	padding-right: 45%;
+    padding-top: 45%;
+}
+
+.about {
+
+    padding-top: 100px;
+}
+
+/* Scaling progressbar */
+
+#spacer {
+  width: 100%;
+  height: 500px;
+  background: #efefef;
+  margin-bottom: 20px;
+}
+
+.progress-animate {
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+
+
+#myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+}
+
+
+/*flashing letters*/
+
+.flash {
+   animation-name: flash;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+
+.vip-picture {
+    height: 100px;
+    width: auto;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+#counter {
+    color: #FF0000;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.h4 {
+    color: #0080ff;
+}
+
+
+//Zoom the picture link
+
+img.zoom {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+
+.transition {
+
+  box-shadow: 0px 0px 20px #000000;
+  z-index: 2;
+  -webkit-filter: blur(0.1px);
+  -webkit-filter: brightness(50%);
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+  transition: 0.1s ease;
+}
+
+
+
+//slider
+
+.img-title {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    /*opacity: 0;*/
+    display: none; /* comment this out for CSS hover */
+    //background-color: #000000;
+    /*transition: all 0.5s ease;*/
+}
+
+    .img-title h5 {
+        position: absolute;
+        color: #fff;
+        top: 33%;
+        width: 100%;
+        text-align: center;
+    }
+
+.card {
+  background-color: #ececec;
+  margin-top: 10px 0 0 10px;
+  min-height: 100%;
+}
+
+.form-signin {
+  padding-top: 7rem;
+
+}
+
+#alert {
+  display: none;
+}
+
+.pre-figure span {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    color: rgb(0, 128, 255);
+    font-size: 1rem;
+    text-decoration: none;
+    -webkit-transition: .4s ease-in-out;
+    transition: .3s ease-in-out;
+    opacity: 0;
+    text-shadow: 1px 1px 2px grey;
+}
+
+figure:hover+span {
+    bottom: -18px;
+    opacity: 1;
+}
+
+.contactpic {
+  height: 20vw;
+  width: 20vw;
+  margin: 10px;
+  border-radius: 50%;
+}
