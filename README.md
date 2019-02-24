@@ -6,7 +6,7 @@ This is my very first attempt of building a portfolio-page. :bowtie:
 <img src="github/homepage.png">
 </p>
 
-## See this :poop: out live! 
+## Tjek this :poop: out live! 
 
 To see the live version click [here](https://web-developer-js.de) :rocket:
 
