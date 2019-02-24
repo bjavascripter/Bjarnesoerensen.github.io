@@ -1,8 +1,8 @@
 {
-  "name": "bootstrap4-custom-boilerplate",
-  "description": "A custom boilerplate created for Bootstrap 4, using npm and SCSS",
+  "name": "Bjarnes Homepage",
+  "description": "very first attempt of building a homepage",
   "version": "1.0.0",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "devDependencies": {
     "bootstrap": "^4.0.0-beta.2",
     "font-awesome": "^4.7.0",
@@ -21,6 +21,6 @@
     "popper.js": "^1.13.0"
   },
   "scripts": {
-    "setup": "npm install && gulp setup"
+    "start": "npm install && gulp begin"
   }
 }

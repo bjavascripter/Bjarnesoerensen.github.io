@@ -65,7 +65,7 @@ gulp.task('webserver', function() {
 });
 
 // Setup task for a new project
-gulp.task('setup', ['copy', 'compress-js', 'combine-js', 'scss']);
+gulp.task('begin', ['copy', 'compress-js', 'combine-js', 'scss']);
 
 // Watcher task to look for file changes
 gulp.task('watch', function() {
